@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Client } from 'src/app/core/Client';
 
 @Component({
@@ -14,7 +15,7 @@ export class ClientFormComponent {
   display: boolean = false;
   client: Client = new Client();
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private router: Router) {
 
     this.formgroup = this.formBuilder.group({
       name: ['', Validators.required],

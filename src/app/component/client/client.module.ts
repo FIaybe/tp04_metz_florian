@@ -19,15 +19,7 @@ import { DisplayClientComponent } from './display-client/display-client.componen
 const appChild: Routes = [
   {
     path: '',
-    component: ClientComponent
-  },
-  {
-    path: 'form',
     component: ClientFormComponent,
-  },
-  {
-    path: 'display',
-    component: DisplayClientComponent
   }
 ];
 
