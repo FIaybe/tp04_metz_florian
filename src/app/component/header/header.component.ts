@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Link } from 'src/app/core/Link';
+import { Link } from 'src/app/core/model/Link';
 
 @Component({
   selector: 'app-header',

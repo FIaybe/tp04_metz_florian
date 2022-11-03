@@ -12,7 +12,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { PhoneFormatPipe } from 'src/app/pipe/phone-format.pipe';
 import { HeaderModule } from '../header/header.module';
 import { ClientFormComponent } from './client-form/client-form.component';
-import { ClientComponent } from './client.component';
 import { DisplayClientComponent } from './display-client/display-client.component';
 
 
@@ -25,7 +24,6 @@ const appChild: Routes = [
 
 @NgModule({
   declarations: [
-    ClientComponent,
     ClientFormComponent,
     DisplayClientComponent,
     PhoneFormatPipe,

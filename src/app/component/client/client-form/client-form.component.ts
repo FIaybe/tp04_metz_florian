@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Client } from 'src/app/core/Client';
+import { Client } from 'src/app/core/model/Client';
 
 @Component({
   selector: 'app-client-form',

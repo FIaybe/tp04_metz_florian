@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Product } from '../../core/product';
+import { Product } from 'src/app/core/model/product';
 import { DataService } from '../../services/data/data.service';
 
 @Component({
