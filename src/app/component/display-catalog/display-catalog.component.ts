@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Product } from '../core/product';
-import { DataService } from '../services/data/data.service';
+import { Product } from '../../core/product';
+import { DataService } from '../../services/data/data.service';
 
 @Component({
   selector: 'app-display-catalog',

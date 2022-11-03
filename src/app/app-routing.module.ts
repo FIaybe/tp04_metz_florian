@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClientFormComponent } from './client-form/client-form.component';
-import { DisplayCatalogComponent } from './display-catalog/display-catalog.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { ClientFormComponent } from './component/client/client-form/client-form.component';
+import { DisplayCatalogComponent } from './component/display-catalog/display-catalog.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
+  { path: '', loadChildren: () => import('./component/welcome/welcome.module').then(m => m.WelcomeModule) },
   { path: 'client-form', component: ClientFormComponent },
   { path: 'display-catalog', component: DisplayCatalogComponent },
 ];

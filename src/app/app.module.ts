@@ -16,16 +16,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClientFormComponent } from './client-form/client-form.component';
+import { ClientFormComponent } from './component/client/client-form/client-form.component';
+import { DisplayClientComponent } from './component/client/display-client/display-client.component';
+import { DisplayCatalogComponent } from './component/display-catalog/display-catalog.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { HeaderComponent } from './component/header/header.component';
+import { LoginComponent } from './component/login/login.component';
+import { SearchBarComponent } from './component/search-bar/search-bar.component';
+import { WelcomeComponent } from './component/welcome/welcome.component';
 import { OnlyLetterDirective } from './directives/onlyLetter/only-letter.directive';
 import { SpecificNumberDigitDirective } from './directives/specificNumberDigit/specific-number-digit.directive';
-import { DisplayCatalogComponent } from './display-catalog/display-catalog.component';
-import { DisplayClientComponent } from './display-client/display-client.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { PhoneFormatPipe } from './pipe/phone-format.pipe';
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     PhoneFormatPipe,
     DisplayCatalogComponent,
     SearchBarComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
