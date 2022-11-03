@@ -24,6 +24,8 @@ export class DisplayClientComponent implements OnInit {
   }
 
   verifyClientProperties() {
+    if (this.client != undefined)
+      return false;
     if (!this.client.name || !this.client.firstName || !this.client.address || !this.client.zipCode ||
       !this.client.city || !this.client.country || !this.client.phone || !this.client.email || !this.client || !this.client.login
       || !this.client.password || !this.client.passwordValidation) {

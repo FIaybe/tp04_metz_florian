@@ -1,0 +1,56 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule, Routes } from '@angular/router';
+import { PhoneFormatPipe } from 'src/app/pipe/phone-format.pipe';
+import { HeaderModule } from '../header/header.module';
+import { ClientFormComponent } from './client-form/client-form.component';
+import { ClientComponent } from './client.component';
+import { DisplayClientComponent } from './display-client/display-client.component';
+
+
+const appChild: Routes = [
+  {
+    path: '',
+    component: ClientComponent
+  },
+  {
+    path: 'form',
+    component: ClientFormComponent,
+  },
+  {
+    path: 'display',
+    component: DisplayClientComponent
+  }
+];
+
+@NgModule({
+  declarations: [
+    ClientComponent,
+    ClientFormComponent,
+    DisplayClientComponent,
+    PhoneFormatPipe,
+  ],
+  imports: [
+    RouterModule.forChild(appChild),
+    CommonModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatSelectModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    HeaderModule
+  ]
+})
+export class ClientModule { }
