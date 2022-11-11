@@ -15,7 +15,7 @@ export class ProductState {
 
   @Selector()
   static getNbProducts(state: ProductStateModel) {
-    return state.products.length;
+    return state.products.reduce((acc, product) => acc + product.quantity, 0);
   }
 
   @Selector()
