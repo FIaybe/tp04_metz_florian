@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxsModule } from '@ngxs/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayCatalogModule } from './component/catalog/catalog.module';
 import { FooterComponent } from './component/footer/footer.component';
 import { HeaderModule } from './component/header/header.module';
+import { ProductState } from './core/state/ProductState';
 import { OnlyLetterDirective } from './directives/onlyLetter/only-letter.directive';
 import { SpecificNumberDigitDirective } from './directives/specificNumberDigit/specific-number-digit.directive';
 @NgModule({
@@ -22,6 +24,7 @@ import { SpecificNumberDigitDirective } from './directives/specificNumberDigit/s
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgxsModule.forRoot([ProductState]),
     HeaderModule,
     DisplayCatalogModule,
   ],
