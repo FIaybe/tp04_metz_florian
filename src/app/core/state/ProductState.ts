@@ -25,7 +25,7 @@ export class ProductState {
 
   @Selector()
   static getTotalPrice(state: ProductStateModel) {
-    //somme des prix * quantité
+    // reduce = methode de fou !
     return state.products.reduce((acc, product) => acc + product.price * product.quantity, 0).toFixed(2);
   }
 
