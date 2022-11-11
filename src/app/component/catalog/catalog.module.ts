@@ -12,6 +12,10 @@ const appChild: Routes = [
   {
     path: '',
     component: DisplayCatalogComponent,
+  },
+  {
+    path: 'detail/:id',
+    component: DetailsComponent,
   }
 ];
 

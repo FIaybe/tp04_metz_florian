@@ -17,10 +17,11 @@ export class DisplayCatalogComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCatalogueObject();
+
   }
 
   getCatalogueObject() {
-    this.dataService.getCatalogue().subscribe({
+    this.dataService.getCatalogues().subscribe({
       next: (products) => {
         this.products = products;
       },

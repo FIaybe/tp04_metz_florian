@@ -34,7 +34,7 @@ export class DataService {
   }
 
   //GetCatalogue : return a list of products
-  getCatalogue(): Observable<Product[]> {
+  getCatalogues(): Observable<Product[]> {
     return this.client.get<Product[]>(environment.catalogue);
   }
 }
