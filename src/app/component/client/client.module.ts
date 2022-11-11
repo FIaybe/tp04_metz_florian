@@ -10,7 +10,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, Routes } from '@angular/router';
 import { PhoneFormatPipe } from 'src/app/pipe/phone-format.pipe';
-import { HeaderModule } from '../header/header.module';
 import { ClientFormComponent } from './client-form/client-form.component';
 import { DisplayClientComponent } from './display-client/display-client.component';
 
@@ -40,7 +39,6 @@ const appChild: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
-    HeaderModule
   ]
 })
 export class ClientModule { }

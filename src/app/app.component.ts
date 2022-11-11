@@ -21,7 +21,7 @@ export class AppComponent {
     },
     {
       label: 'Catalogue',
-      link: 'display-catalog',
+      link: 'catalog',
       index: 2
     }
   ];

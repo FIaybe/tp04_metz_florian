@@ -3,10 +3,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchBarModule } from '../search-bar/search-bar.module';
 import { DisplayCatalogComponent } from './catalog.component';
+import { DetailsComponent } from './details/details.component';
 
 const appChild: Routes = [
   {
@@ -18,6 +18,7 @@ const appChild: Routes = [
 @NgModule({
   declarations: [
     DisplayCatalogComponent,
+    DetailsComponent,
   ],
   imports: [
     RouterModule.forChild(appChild),
@@ -25,7 +26,6 @@ const appChild: Routes = [
     MatDividerModule,
     MatCardModule,
     HttpClientModule,
-    BrowserAnimationsModule,
     SearchBarModule,
   ]
 })
