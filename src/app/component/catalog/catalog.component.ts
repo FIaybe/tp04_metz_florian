@@ -4,9 +4,9 @@ import { Product } from 'src/app/core/model/product';
 import { DataService } from '../../services/data/data.service';
 
 @Component({
-  selector: 'app-display-catalog',
-  templateUrl: './display-catalog.component.html',
-  styleUrls: ['./display-catalog.component.scss'],
+  selector: 'app-catalog',
+  templateUrl: './catalog.component.html',
+  styleUrls: ['./catalog.component.scss'],
 })
 export class DisplayCatalogComponent implements OnInit {
   products: Product[];
